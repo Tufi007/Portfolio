@@ -1,0 +1,209 @@
+.intro{
+    width: auto;
+    min-height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin: 0.9rem;
+    grid-row: 2/3;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+:root {
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #338565;
+  --color-4: #e83611;
+  --color-5: #f9002f;
+}
+
+
+.wrapper {
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  line-height: 1;
+  border-radius: 1rem;
+  max-width:70%;
+  min-width: 500px;
+  padding: 0.5rem;
+  margin-right: 10px;
+}
+.insideintro {
+  /* background-color: rgba(255, 255, 255 ); */
+  font-family: "Varela Round", sans-serif;
+  font-weight:700;
+  font-style:normal;
+  font-size: 2.2rem;
+  font-weight: 900;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 2px;
+  color: rgb(0, 0, 0);
+}
+.developername {
+  display: block;
+  color: #ff0000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 3rem;
+  width: max-content;
+}
+
+.type{ 
+  font-family: "Varela Round", sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:x-large;
+  color: white;
+  background-color:rgb(34, 111, 179);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 3px;
+  width: max-content;
+}
+.iam{
+  position: relative;
+  margin-right: 1rem;
+}
+.iam::after{
+  z-index: 1;
+  position: absolute;
+  /* margin-right: 0.5rem; */
+  /* left: 0.5rem; */
+  margin-left: 0.2rem;
+  margin-top: -3px;
+  content: '';
+  width: 3px;
+  height: 100%;
+  
+  background-color: #fffffff5;
+
+}
+.abouttype{
+ 
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: "Varela Round", sans-serif;
+  font-style:normal;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+.abouttype .hireme{
+  display: inline-block;
+  width: max-content;
+  margin: 0.3rem;
+}
+.hireme:hover{
+  background-color: rgb(255, 251, 242);
+}
+.developername:hover{
+  background: linear-gradient(219deg, 
+    var(--color-1) 19%, 
+    transparent 19%,transparent 20%, 
+    var(--color-2) 20%, var(--color-2)  39%,
+    transparent 39%,transparent 40%, 
+    var(--color-3) 40%,var(--color-3) 59% ,
+    transparent 59%,transparent 60%, 
+    var(--color-4) 60%, var(--color-4) 79%,
+    transparent 79%, transparent 80%, 
+    var(--color-5) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.water{
+  width :300px;
+  height: 300px;
+  margin :auto;
+  background-image :url(./images/tufi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:scroll;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow :15px 15px 50px rgba(0,0,0,0.2);
+  animation: morphing 15s ease  infinite;
+  
+  overflow :hidden;
+}
+.water:hover{
+  animation-play-state :paused;
+}
+  @keyframes morphing {
+    0% {
+      border-radius :48% 27% 66% 22% / 53% 56% 31% 10% ;
+      box-shadow :15px 15px 50px rgb(5, 164, 192);
+      border: 3px solid rgb(5, 164, 192) ;
+    }
+    25% { 
+      border-radius :60% 10% 29% 59% / 22% 54% 37% 58% ;
+      box-shadow :15px 15px 50px rgb(28, 168, 91);
+      border: 3px solid rgb(28, 168, 91);
+    }
+    50% {
+      border-radius :23% 60% 29% 54% / 10% 71% 22% 79% ;
+      box-shadow :-10px -5px 50px rgb(43, 33, 192);
+      border: 3px solid rgb(43, 33, 192);
+    }
+    75% {
+      border-radius :54% 37% 55% 28% / 68% 69% 22% 35%  ;
+      box-shadow :-10px -5px 50px rgb(248, 77, 77);
+      border: 3px solid rgb(248, 77, 77); 
+    }
+    100%{
+      border-radius :48% 27% 66% 22% / 53% 56% 31% 10% ;
+      box-shadow :15px 15px 50px rgb(5, 164, 192);
+      border: 3px solid rgb(5, 164, 192) ;
+    }
+  }
+  @media screen and (max-width:760px){
+    .intro{
+      display: flex;
+      flex-flow: column-reverse wrap;
+      justify-content:space-evenly;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      row-gap: 1rem;
+      width: auto;
+      height: auto;
+    }
+    .wrapper {
+      min-width: 100%;
+      height: auto;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      justify-content:space-around;
+      padding: 5px;
+      margin: auto;
+    }
+    .abouttype{
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      font-size: large;
+      height: auto;
+    flex-wrap: wrap;
+    }
+    .type{
+      width: max-content;
+      height: auto;
+      font-size: large;
+      margin-left: 8px;
+    }
+    
+    .developername{
+      width: max-content;
+      font-size: larger;
+    }
+   
+  }

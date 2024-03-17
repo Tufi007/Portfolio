@@ -1,0 +1,215 @@
+.skills {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+ 
+  row-gap: 1rem;
+  height: auto;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.skilltitle {
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: x-large;
+}
+.skillprogress {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.row img {
+  width: 45px;
+  height: 45px;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  padding: 0.2rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.row > div {
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  height: auto;
+  width: 40vw;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: rgba(120, 2, 255, 0.507) 0px 3px 8px;
+  animation: rotate 5 linear infinite;
+}
+.row > :nth-child(odd) {
+  display: flex;
+}
+.row > :nth-child(even) {
+  display: flex;
+}
+
+.skillbar {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-right: 0.3rem;
+  background-image: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+  border-radius: 1rem;
+  padding: 2px;
+}
+.skillname,
+.skillvalue {
+  display: inline-block;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
+}
+.barbox {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem 5px 5px 1rem;
+}
+/* .row > div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  margin: -5px;
+  padding: -5px;
+  border-radius: 10px;
+
+  background: conic-gradient(from 45deg, blue, red);
+  animation: rotate 5s linear infinite;
+}
+.row > div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+  border-radius: 5px;
+  z-index: -1;
+  inset: 5px;
+  border-radius: 10px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+} */
+.reactper {
+  background-color: #6654f1;
+  width: 90%;
+}
+.javascriptper {
+  background-color: #d1f72b;
+  width: 95%;
+}
+.expressjsper{
+  width: 95%;
+  background-color: green;
+}
+.nodejsper{
+  width: 80%;
+  background-color: rgb(28, 57, 136);
+}
+.mongodbper{
+  width: 80%;
+  background-color: rgba(141, 28, 206, 0.719);
+}
+.laravelper{
+  width:70%;
+  background-color: rgb(196, 66, 14);
+}
+.htmlper{
+  width: 90%;
+  background-color: rgb(177, 20, 20);
+}
+.cssper{
+  width: 90%;
+  background-color: rgb(7, 61, 63);
+}
+.bootstrapper{
+  width: 60%;
+  background-color: rgb(55, 53, 153);
+}
+.jqueryper{
+  width: 65%;
+  background-color: rgb(128, 0, 100);
+}
+.mysqlper{
+  width: 70%;
+  background-color: rgb(196, 76, 132);
+}
+.phpper{
+  width: 80%;
+  background-color: rgb(84, 80, 105);
+}
+.javaper{
+  width: 70%;
+  background-color: rgb(90, 128, 0);
+}
+.gitper{
+  width: 90%;
+  background-color: rgb(214, 75, 33);
+}
+@media screen and (max-width:760px){
+  .skillhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row{
+    flex-flow: column wrap;
+  }
+  .row>div{
+    width: 80vw;
+  }
+}
