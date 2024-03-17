@@ -119,8 +119,8 @@
 
 
 .water{
-  width :300px;
-  height: 300px;
+  width :350px;
+  height: 350px;
   margin :auto;
   background-image :url(./images/tufi.jpg);
   background-position: center;
@@ -203,7 +203,17 @@
     
     .developername{
       width: max-content;
-      font-size: large;
+      font-size:x-large;
+    }
+    .hiiam{
+      font-size: x-large;
     }
    
+  }
+  @media screen and (max-width:412px){
+    .water{
+      width: 250px;
+      height: 250px;
+    
+    }
   }
