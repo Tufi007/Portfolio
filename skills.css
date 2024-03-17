@@ -75,7 +75,10 @@
 .row > :nth-child(even) {
   display: flex;
 }
-
+.row>div:hover{
+ transform:scale(1.03);
+  background-image: linear-gradient(to right, #22b3abdc 0%, #7d917cdc 100%);
+}
 .skillbar {
   width: 100%;
   height: auto;

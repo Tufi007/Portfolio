@@ -16,11 +16,12 @@
   position: relative;
 }
 .header  a:hover{
-  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
-transform:scale(1.3);
+  background-image: linear-gradient(to top, #000000 0%, #000000 100%);
+transform:scale(1.05);
 border-radius: 10px;
-
-transition: all 0.2s ease;
+width: auto;
+color: whitesmoke;
+transition: all 0.3s ease;
 }
 .navtoggle {
   position: absolute;
@@ -64,7 +65,7 @@ transition: all 0.2s ease;
 .navbar li {
   margin: 0.5rem;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .navbar a {
   font-family: "Nunito", sans-serif;
