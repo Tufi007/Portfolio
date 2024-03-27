@@ -16,7 +16,7 @@
     display: inline-block;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(20, 147, 151, 0.815);
+    background-color: rgba(108, 51, 177, 0.815);
     padding: 5px;
     color: white;
     border-radius: 5px;
@@ -39,3 +39,50 @@
     height: 30px;
     
   }
+  .exphead{
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    word-break: keep-all;
+    
+  }
+  .detail{
+    background-color:inherit;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.respo p:nth-child(even){
+    background: linear-gradient(90deg, #ffffff 0%, #d9e7ff 100%);
+    padding: 3px;
+    border-radius: 5px;
+    margin: 4px;
+    width: auto;
+}
+.respo p:nth-child(odd){
+    background: linear-gradient(90deg, #ef9a9a 0%, #d9e7ff 100%);
+    padding: 3px;
+    border-radius: 5px;
+    width: auto;
+}
+.expmain{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    padding: 2px;
+    border-radius: 5px;
+    text-align: left;
+    width: fit-content;
+}
+.job{
+    background: linear-gradient(90deg, #ef9a9a 0%, #d9e7ff 100%) ;
+    margin: 3px;
+    padding: 4px;
+    border-radius: 5px;
+}
+@media screen and (max-width:412px){
+.moreinfo{
+    font-size: large;
+    font-weight: 300;
+    
+}
+}
